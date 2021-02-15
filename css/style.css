@@ -159,6 +159,10 @@ div {
     transition: color 1s ease 0s;
 }
 
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
+    background: aliceblue;
+}
+
 .navbar.solid .navbar-toggler {
     color: #000000;
 }
