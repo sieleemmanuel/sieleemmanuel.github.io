@@ -317,7 +317,29 @@ h1.brand-heading {
     margin: 0;
 }
 
-@keyframes typing {
+
+/* typing animation */
+
+h1.my-role {
+    animation: type 3s steps(16);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #e040fb;
+    width: 16ch;
+    text-align: center;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 16ch;
+    }
+}
+
+
+/* @keyframes typing {
     from {
         width: 0;
     }
@@ -325,7 +347,6 @@ h1.brand-heading {
         width: 455px;
     }
 }
-
 @keyframes blink-caret {
     from,
     to {
@@ -334,7 +355,7 @@ h1.brand-heading {
     50% {
         border-color: #e040fb
     }
-}
+} */
 
 h2 {
     margin-top: 20px;
