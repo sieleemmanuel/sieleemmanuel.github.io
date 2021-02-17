@@ -21,6 +21,12 @@
     /*1rem = 16px*/
 }
 
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .navbar-nav {
+        margin-right: 38%;
+    }
+}
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -32,27 +38,27 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+    }
     .navbar .navbar-collapse {
         height: 740px;
         background-color: rgba(0, 0, 0, 0.9);
     }
-}
-
-@media only screen and (max-width: 767px) {
-    .navbar-fixed-top .navbar-collapse {
-        max-height: 100%;
-    }
-}
-
-
-/* @media only screen and (max-width: 767px) {
     .navbar-nav li {
         float: left;
         margin: 9px 50px;
         display: inherit;
         width: 100%;
+        margin-top: 0px;
     }
-} */
+    .navbar-nav {
+        text-align: center;
+        float: right;
+        width: 200px;
+        margin: 11px 21px;
+    }
+}
 
 @media (min-width: 768px) {
     .col-sm-12 {
@@ -70,19 +76,9 @@
     .navbar-toggler .icon-bar {
         background: #ffffff;
     }
-}
-
-@media only screen and (max-width: 767px) {
-    .navbar-nav li {
-        float: left;
-        margin: 0;
-        display: inherit;
-        width: 100%;
-        margin-top: 0px;
-    }
-    .navbar .navbar-collapse {
-        height: 50px;
-        background-color: transparent;
+    .navbar.solid.navbar-nav>li>a {
+        color: #ffffff;
+        transition: color 1s ease 0s;
     }
 }
 
@@ -150,7 +146,7 @@ div {
 }
 
 .navbar.solid .navbar-nav>li>a {
-    color: #000000;
+    color: #ffffff;
     transition: color 1s ease 0s;
 }
 
@@ -159,9 +155,18 @@ div {
     transition: color 1s ease 0s;
 }
 
-ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
-    background: aliceblue;
+.navbar.solid .navbar-toggler .icon-bar {
+    background: #000000;
 }
+
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+
+/* .navbar.solid .navbar-nav {
+    background: #FFFFFF;
+} */
 
 .navbar.solid .navbar-toggler {
     color: #000000;
