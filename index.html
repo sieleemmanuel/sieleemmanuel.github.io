@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
@@ -96,16 +98,16 @@
         </div>
     </header>
     <section id="about" class="section-padding">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row">
-                <div class="col-sm-12 col-md-4">
+                <div class="col-sm-12 col-md-4" data-aos="fade-right">
                     <div class="stack">
                         <img src="/images/portfolio_profile.jpg" alt="about Siele">
                     </div>
                 </div>
-                <div class="col-md-7 col-md-offset-1 col-sm-12">
+                <div class="col-md-7 col-md-offset-1 col-sm-12" data-aos="fade-left">
                     <div class="about-right about-title">
-                        <h2>ABOUT
+                        <h2 data-aos="fade-down-left">ABOUT
                             <span>
                                  SIELE
                             </span>
@@ -121,10 +123,10 @@
         </div>
     </section>
 
-    <section class="my-skills skills-overlay intro section-padding" id="skills">
+    <section class="my-skills skills-overlay intro section-padding" id="skills" data-aos="fade-up">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-down-left">
                     <div class="section-title">
                         <h2> My
                             <span>Skills</span>
@@ -139,7 +141,7 @@
                         <div id="m-skills">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" data-aos="fade-right">
                                         <div class="skillbar" data-percent="95%">
                                             <h3 class="skillbar-title">Android SDK</h3>
                                             <div class="progress mx3">
@@ -149,7 +151,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" data-aos="fade-right">
                                         <div class="skillbar" data-percent="95%">
                                             <h3 class="skillbar-title">Java</h3>
                                             <div class="progress mx3">
@@ -159,7 +161,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" data-aos="fade-right">
                                         <div class="skillbar" data-percent="90%">
                                             <h3 class="skillbar-title">Kotlin</h3>
                                             <div class="progress mx3">
@@ -169,21 +171,21 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="md-12">
+                                    <div class="md-12" data-aos="fade-left">
                                         <div class="skillbar" data-percent="65">
                                             <h3 class="skillbar-title">Javascript</h3>
                                             <div class="progress mx3">
                                                 <div class="progress-bar bg-succes " style="width: 60%">60%</div>
                                             </div>
                                         </div>
-                                        <div class="md-12">
+                                        <div class="md-12" data-aos="fade-left">
                                             <div class="skillbar" data-percent="45%">
                                                 <h3 class="skillbar-title">NodeJs</h3>
                                                 <div class="progress mx3">
                                                     <div class="progress-bar bg-succes " style="width: 60%">45%</div>
                                                 </div>
                                             </div>
-                                            <div class="md-12">
+                                            <div class="md-12" data-aos="fade-left">
                                                 <div class="skillbar" data-percent="70%">
                                                     <h3 class="skillbar-title">SQLite</h3>
                                                     <div class="progress mx3">
@@ -201,10 +203,10 @@
                 </div>
             </div>
     </section>
-    <section id="abilities" class="my-abilities text-center section-padding">
+    <section id="abilities" class="my-abilities text-center section-padding" data-aos="fade-up">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-down-left">
                     <div class="section-title">
                         <h2> My
                             <span>work</span>
@@ -213,28 +215,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" data-aos="fade-right">
                     <div class="work-box">
                         <span class="after"></span>
                         <span class="before"></span>
                         <div class="work-icon">
                             <i class="fa fa-android" aria-hidden="true"></i>
                         </div>
-                        <div class="work-content">
+                        <div class="work-content" data-aos="zoom-in">
                             <h4>Application Development</h4>
                             <p>Kotlin, Java, xml,json</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate tenetur reprehenderit dolorem ipsa doloribus, quibusdam at quas, provident fuga ad impedit amet, repudiandae iste labore.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 " data-aos="fade-left">
                     <div class="work-box">
                         <span class="after"></span>
                         <span class="before"></span>
                         <div class="work-icon">
                             <i class="fa fa-code" aria-hidden="true"></i>
                         </div>
-                        <div class="work-content">
+                        <div class="work-content" data-aos="zoom-in">
                             <h4>BackEnd Development</h4>
                             <p>Javascript, NodeJs</p>
                             <p>In need to build server-side application for consistent response to your client? I am here with NodeJs BackEnd solutions in order to help you deliver convinient services to your clients with ease </p>
@@ -245,10 +247,10 @@
         </div>
     </section>
 
-    <section id="done-work" class="portfolio section-padding">
+    <section id="done-work" class="portfolio section-padding" data-aos="fade-up">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-down-left">
                     <div class="section-title">
                         <h2> My
                             <span>Projects</span>
@@ -257,13 +259,13 @@
                 </div>
             </div>
             <div class="row  grid work-1 text-center">
-                <div class="col-xs-12 col-sm-12 col-md-4 grid-item android">
+                <div class="col-xs-12 col-sm-12 col-md-4 grid-item android" data-aos="zoom-in">
                     <a href="#" class="androidcoding portfolio-link"><img src="/images/Originals/codeAndroid.jpg" alt="" class="thumbnail img-responsive"></a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 grid-item frontend">
+                <div class="col-xs-12 col-sm-12 col-md-4 grid-item frontend" data-aos="zoom-in">
                     <a href="#" class="androidcoding portfolio-link"><img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="thumbnail img-responsive"></a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 grid-item tweaks">
+                <div class="col-xs-12 col-sm-12 col-md-4 grid-item tweaks" data-aos="zoom-in">
                     <a href="#" class="androidcoding portfolio-link"><img src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="thumbnail img-responsive"></a>
                 </div>
             </div>
@@ -271,10 +273,10 @@
         </div>
     </section>
 
-    <section class="contact-me section-padding" id="contact-me">
+    <section class="contact-me section-padding" id="contact-me" data-aos="fade-up">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-down-left">
                     <div class="section-title">
                         <h2> My
                             <span>contacts</span>
@@ -284,7 +286,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-xm-12 col-md-4 col-md-offset-1">
-                    <div class="left-contact">
+                    <div class="left-contact" data-aos="fade-right">
                         <div class="left-contact-text">
                             <i class="fa fa-map-marker"></i>
                             <h2>Address</h2>
@@ -308,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xm-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="col-xm-12 col-sm-12 col-md-7 col-lg-7" data-aos="fade-left">
                     <form action="https://formspree.io/f/xgepgaaj" method="post" target="_self" data-form-title="CONTACT ME">
                         <div class="form group">
                             <input type="text" id="f_name" name="name" class="form-control contact-name" required placeholder="Full Name">
@@ -341,6 +343,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
