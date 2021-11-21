@@ -60,9 +60,6 @@
     }
 }
 
-
-/* bootstrap screen setting */
-
 @media (min-width: 576px) {
     .navbar-expand-sm .navbar-collapse {
         display: -ms-flexbox;
@@ -120,7 +117,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width:768px) {
+@media (max-width:768px) {
     .navbar-expand-sm .navbar-nav {
         flex-direction: column;
         height: 100%;
@@ -135,6 +132,9 @@
     .col-sm-12 {
         width: 100%;
     }
+    .project__description {
+        padding-top: 10%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -143,10 +143,25 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 575px) {
     .navbar.solid {
-        height: 65px !important;
+        height: 65px;
     }
+    .project__description {
+        padding-top: 14%;
+    }
+}
+
+@media only screen and (min-width:575px) and (max-width: 768px) {
+    .navbar.solid {
+        height: 55px;
+    }
+    .project__description {
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .navbar-toggler .icon-bar {
         background: #ffffff;
     }
@@ -189,12 +204,6 @@ body {
     overflow-x: hidden
 }
 
-
-/* div {
-    display: block;
-    box-sizing: border-box
-} */
-
 .navbar {
     text-transform: uppercase;
     font-size: 14px;
@@ -215,7 +224,7 @@ body {
 }
 
 .navbar.solid .navbar-nav>ul {
-    background: #E1BEE7;
+    background: #c3e7be;
     transition: color 1s ease 0s;
 }
 
@@ -225,7 +234,10 @@ body {
 
 .navbar.solid {
     background: #ffffff;
-    height: 75px;
+}
+
+.navbar.solid .menu-section {
+    margin-top: 0px;
 }
 
 button.navbar-toggler:focus {
@@ -254,6 +266,14 @@ button.navbar-toggler:focus {
     text-transform: uppercase;
 }
 
+.navbar-light .navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #73cf28;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
     line-height: 1.5;
@@ -264,14 +284,14 @@ button.navbar-toggler:focus {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light {
-    color: #91ff38;
+    color: #73cf28;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #91ff38;
+    color: #73cf28;
 }
 
 .nav-item {
@@ -285,11 +305,7 @@ button.navbar-toggler:focus {
 }
 
 .bcg-light {
-    background-color: #E1BEE7;
-}
-
-.navbar-section {
-    height: 65px;
+    background-color: #c0e7be;
 }
 
 .navbar-light {
@@ -406,10 +422,6 @@ h2 {
     position: relative;
 }
 
-.text-pry {
-    color: #e040fb;
-}
-
 .text-center {
     text-align: center;
 }
@@ -461,6 +473,16 @@ h2 {
     font-size: 18px;
     font-weight: 100;
     margin: 0;
+}
+
+.intro .btn-lg {
+    padding-right: 50px;
+    padding-left: 50px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 h1,
@@ -583,28 +605,12 @@ ul {
     margin: 0;
 }
 
-.skills-card {
-    padding: 40px;
-}
-
-.contact-card {
-    border-radius: 1rem;
-}
-
-.contact-card form {
-    padding: 15px 15px;
-}
-
-.contact-card .btn {
-    float: right;
-}
-
 .section-padding {
     padding: 60px 0;
 }
 
 .stack::before {
-    background: #969696;
+    background: #75a061;
     content: "";
     width: 100%;
     height: 100%;
@@ -655,6 +661,9 @@ ul {
     color: #60b31cce;
 }
 
+
+/* MY SKILLS SECTION */
+
 .my-skills .section-title h2 {
     color: #fff;
 }
@@ -665,6 +674,10 @@ ul {
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.skills-card {
+    padding: 40px;
 }
 
 .my-skills {
@@ -704,6 +717,11 @@ ul {
     color: #fff;
 }
 
+.skills-overlay {
+    padding: 50px 0;
+    background-color: rgb(23, 77, 90, .5);
+}
+
 .progress {
     border-radius: .5rem;
 }
@@ -711,6 +729,9 @@ ul {
 .progress-bar {
     font-weight: 900;
 }
+
+
+/* MY WORK SECTION/WHAT I DO */
 
 .work-box {
     padding: 20px;
@@ -734,11 +755,18 @@ ul {
     padding-bottom: 15px;
 }
 
-.left-contact-text i {
-    color: #60b31cce;
-    font-size: 25px;
-    margin-bottom: 10px;
+i.fa.fa-android {
+    color: rgb(0, 128, 0);
 }
+
+.work-1 {
+    background: url("images/codeAndroid.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* MY PROJECTS SECTION */
 
 .portfolio {
     background-image: url(/images/headerbg.jpg);
@@ -767,6 +795,67 @@ ul {
     color: #fff;
 }
 
+.thumbnails {
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.grid-item {
+    margin: 0 0 30px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-link {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.android_wrap_one {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project__description {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0px;
+    right: 0;
+    visibility: hidden;
+    background: rgba(45, 71, 45, 0.9);
+}
+
+
+/* Display brief project description on hover */
+
+.android_wrap_one:hover .project__description {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project__description button {
+    border-radius: 5px;
+    background: transparent;
+    border: solid #ffff 1px;
+    color: #ffffff;
+}
+
+.project__description button:hover {
+    border-radius: 5px;
+    border: solid #91ff38 0.8px;
+}
+
 footer,
 section,
 aside,
@@ -774,24 +863,9 @@ header {
     display: block;
 }
 
-i.fa.fa-android {
-    color: rgb(0, 128, 0);
-}
-
-.work-1 {
-    background: url("images/codeAndroid.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
 .aside-overlay,
 .skills-overlay {
     color: #f2e4d6;
-}
-
-.skills-overlay {
-    padding: 50px 0;
-    background-color: rgb(23, 77, 90, .5);
 }
 
 .btn-lg {
@@ -806,15 +880,8 @@ i.fa.fa-android {
     display: inline-block;
 }
 
-.intro .btn-lg {
-    padding-right: 50px;
-    padding-left: 50px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    margin-top: 20px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+
+/* CONTACT ME SECTION */
 
 .left-contact-text h2 {
     margin-top: 2px;
@@ -825,33 +892,30 @@ i.fa.fa-android {
     letter-spacing: 3px;
 }
 
+.left-contact-text i {
+    color: #60b31cce;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-card {
+    border-radius: 1rem;
+}
+
+.contact-card form {
+    padding: 15px 15px;
+}
+
+.contact-card .btn {
+    float: right;
+}
+
 .push-bottom {
     margin-bottom: 20px;
 }
 
 
 /* Portfolio Projects Section*/
-
-.thumbnails {
-    border: 0px;
-    padding: 0px;
-    border-radius: 0px;
-}
-
-.grid-item {
-    margin: 0 0 30px;
-    /* width: 33.333%; */
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-}
-
-.portfolio-link {
-    max-width: 400px;
-    margin: 0 auto;
-}
 
 .img-center {
     margin: 0 auto;
