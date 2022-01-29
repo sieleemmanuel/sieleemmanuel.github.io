@@ -349,7 +349,6 @@ button.navbar-toggler:focus {
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid #fff;
 }
 
 .introduction-area img {
@@ -553,6 +552,11 @@ h4 {
     color: #FFFFFF;
     border: 1px solid #0d0d0e
 }
+.connect-social ul li a.icoMail:hover {
+    background-color: #0d0d0e;
+    color: #FFFFFF;
+    border: 1px solid #0d0d0e
+}
 
 
 /* social networks */
@@ -573,8 +577,7 @@ social-circle li a {
     display: inline-table;
     position: relative;
     margin: 0 auto 0 auto;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
+    border-radius: 100%;
 }
 
 .social-circle li a:hover i,
@@ -609,7 +612,7 @@ ul {
     padding: 60px 0;
 }
 
-.stack::before {
+/* .stack::before {
     background: #75a061;
     content: "";
     width: 100%;
@@ -618,14 +621,9 @@ ul {
     left: 0;
     top: 0;
     z-index: -10;
-    -webkit-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+    transform: rotate(-6deg);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
-}
+} */
 
 .stack {
     position: relative;
@@ -703,17 +701,29 @@ ul {
     z-index: -1;
 
 }
+.my-skills .container{
+    overflow-x: visible !important;
+}
+
+.skill-all{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-flow: column;
+   
+}
 
 .circle_wrap{
     display: grid;
-    grid-template-columns: repeat(1,160px);
-    grid-gap: 80px;
-    margin-top: 100px;
-    margin-left: 50px;
-    width: 150px;
-    height: 150px;
+    /* grid-template-columns: repeat(1,160px); */
+    /* grid-gap: 80px; */
+    /* margin-top: 100px; */
+    /* margin-left: 50px; */
+    width: 100px;
+    height: 100px;
     background: #d9d7da;
     border-radius: 50%;
+    /* margin-bottom: 80px; */
 }
 .circle_wrap .circle .mask,
 .circle_wrap .circle .fill-1,
@@ -723,18 +733,18 @@ ul {
 .circle_wrap .circle .fill-5,
 .circle_wrap .circle .fill-6
 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     border-radius: 50%;
 }
 .circle_wrap .circle .mask{
-    clip:rect(0px, 150px,150px, 75px);
+    clip:rect(0px, 100px,100px, 50px);
 }
 
 .mask .fill-1{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #ec0c0c;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #29bf0f;
 }
 .mask.full-1, 
 .circle .fill-1{
@@ -752,8 +762,8 @@ ul {
 }
 /* skill 2 */
 .mask .fill-2{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #10a717;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #cf4237;
 }
 .mask.full-2, 
 .circle .fill-2{
@@ -771,8 +781,8 @@ ul {
 }
 /* skill 3 */
 .mask .fill-3{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #10a717;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #db3c01;
 }
 .mask.full-3, 
 .circle .fill-3{
@@ -791,8 +801,8 @@ ul {
 
 /* skill 4 */
 .mask .fill-4{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #10a717;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #b2b200;
 }
 .mask.full-4, 
 .circle .fill-4{
@@ -811,8 +821,8 @@ ul {
 
 /* Skill 5 */
 .mask .fill-5{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #10a717;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #ff6d00;
 }
 .mask.full-5, 
 .circle .fill-5{
@@ -831,8 +841,8 @@ ul {
 
 /* Skill 6 */
 .mask .fill-6{
-    clip: rect(0px, 75px, 150px, 0px);
-    background-color: #10a717;
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #559cc4;
 }
 .mask.full-6, 
 .circle .fill-6{
@@ -851,19 +861,23 @@ ul {
 
 
 .circle_wrap .inside-circle{
-    width: 124px;
-    height: 124px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     background: #212020;
-    line-height: 120px;
+    line-height: 72px;
     text-align: center;
-    margin-top: 13px;
-    margin-left: 13px;
+    margin-top: 12px;
+    margin-left: 12px;
     color: white;
     position: absolute;
     z-index: 100;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.skill-label{
+    padding: 10px 0px 20px 0px;
 }
 
 
@@ -920,7 +934,10 @@ ul {
 }
 
 i.fa.fa-android {
-    color: rgb(0, 128, 0);
+    color: #29bf0f;
+}
+i.fa.fa-css3 {
+    color: #559cc4;
 }
 
 .work-1 {
@@ -1086,4 +1103,21 @@ header {
 
 .img-center {
     margin: 0 auto;
+}
+
+/* Footer section */
+
+.footer-1{
+    background-color: #212020;
+    color: #FFF;
+}
+.upper-footer{
+    padding-top: 30px;
+}
+.lower-footer{
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.footnotes{
+    margin-top: 35px;
 }
