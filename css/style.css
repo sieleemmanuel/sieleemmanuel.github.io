@@ -877,7 +877,7 @@ ul {
 }
 
 .skill-label{
-    padding: 10px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 
@@ -955,8 +955,6 @@ i.fa.fa-css3 {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: #ffffff;
-    text-align: center;
     position: relative;
     z-index: 1;
 }
@@ -973,7 +971,7 @@ i.fa.fa-css3 {
 }
 
 .portfolio .section-title h2 {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .thumbnails {
@@ -989,8 +987,6 @@ i.fa.fa-css3 {
 .grid-item img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    background-color: #FFF;
 }
 
 .portfolio-link {
@@ -998,26 +994,23 @@ i.fa.fa-css3 {
     margin: 0 auto;
 }
 
-.android_wrap_one {
+.project-box {
     position: relative;
     width: 100%;
     height: 100%;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+    background-color: #fff;
 }
 
 .project__description {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0px;
-    right: 0;
-    visibility: hidden;
-    background: rgba(45, 71, 45, 0.9);
+   padding: 2rem 3% 1rem 4%;
 }
 
 
 /* Display brief project description on hover */
 
-.android_wrap_one:hover .project__description {
+/* .project-box:hover .project__description {
     opacity: 1;
     visibility: visible;
     width: 100%;
@@ -1026,18 +1019,28 @@ i.fa.fa-css3 {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-}
+} */
 
 .project__description button {
     border-radius: 5px;
     background: transparent;
-    border: solid #ffff 1px;
-    color: #ffffff;
+    border: solid #343a40 1px;
+    color: #343a40 ;
+}
+.project__description h4{
+    margin-top: 0;
+}
+.project_more{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .project__description button:hover {
     border-radius: 5px;
-    border: solid #91ff38 0.8px;
+    border: solid #559cc4 0.8px;
+    color: #559cc4;
 }
 
 footer,

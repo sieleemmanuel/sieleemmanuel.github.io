@@ -98,7 +98,14 @@ $("#nav ul li a[href^='#']").on('click', function(e) {
 
 // Reset Form feilds
 function submitForm() {
-    document.getElementsByName('email').value = '';
+    // var submitted=false;
+    // $('#gform').on('submit', function(e) {
+    //   $('#gform *').fadeOut(2000);
+    //   $('#gform').prepend('Your submission has been processed...');
+    //   });
     document.getElementsByName('name').value = '';
+    document.getElementsByName('email').value = '';
     document.getElementsByName('message').value = '';
+
+    //document.getElementsByClassName("submission-message").style.display = "block"
 }
